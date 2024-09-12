@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 30px;
+  color: #333;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #999;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form input[type="checkbox"] {
+  margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+table {
+  width: 100%;
+  background-color: #fff;
+  text-align: left;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 5px #999;
+}
+
+th,
+td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+td {
+  vertical-align: top;
+}
+
+#filter-form {
+  display: flex;
+  width: 100%;
+  gap: 0px 10px;
+  align-items: center;
+  margin: 0;
+}
+
+#filter-form input[type="text"] {
+  margin-bottom: 0px;
+}
+
+#clear-button {
+  display: inline-block;
+  width: 150px;
+  padding: 10px 20px;
+  background-color: rgb(216, 1, 24);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+#delete-button {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: rgb(216, 1, 24);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.filterDelete {
+  width: 100%;
+  display: flex;
+  gap: 0px 60px;
+  justify-content: start;
+  align-items: end;
+  margin: 0 0 20px;
+}

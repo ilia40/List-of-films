@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+</head>
+
+<body>
+    <form id="film-form">
+        <label for="title">Название:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="genre">Жанр:</label><br>
+        <input type="text" id="genre" name="genre"><br>
+        <label for="releaseYear">Год:</label><br>
+        <input type="text" id="releaseYear" name="releaseYear"><br>
+        <input type="checkbox" id="isWatched" name="isWatched">
+        <label for="isWatched">Успели посмотреть?</label><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div class="filterDelete">
+        <form id="filter-form">
+            <input type="text" id="filter-title" name="title" placeholder="Название">
+            <input type="text" id="filter-genre" name="genre" placeholder="Жанр">
+            <input type="text" id="filter-releaseYear" name="releaseYear" placeholder="Год релиза">
+            <select id="filter-select">
+                <option value="All">Все</option>
+                <option value="title">Только название</option>
+                <option value="genre">Только жанр</option>
+                <option value="releaseYear">Только год релиза</option>
+            </select>
+        </form>
+        <button id="clear-button">Удалить все</button>
+    </div>
+    <table id="film-table">
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Жанр</th>
+                <th>Год</th>
+                <th>Успели посмотреть?</th>
+                <th>Действие</th>
+            </tr>
+        </thead>
+        <tbody id="film-tbody">
+            <!-- Rows will be inserted here -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
